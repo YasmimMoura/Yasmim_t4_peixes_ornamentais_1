@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peixes ornamentais- aquário</title>
+    <link rel="stylesheet" href="../css/style.manejo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html"> Home </a>
+            <a href="peixes_agua_doce.html"> Peixe água doce </a>
+            <a href="peixe_agua_salgada.html">Peixe água salgada </a>
+            <a href="manejo.html"> Calculadora </a>
+        </nav>
+    </header> 
+
+    <div class="calculadora">
+        <div class="container">
+            <h1>Calculadora -peixes ornamentais</h1>
+            <form id="aquariumForm">
+                <div>
+                    <label for="length">Comprimento do Aquário (cm):</label>
+                    <input type="number" id="length" name="length" required>
+                </div>
+                <div>
+                    <label for="width">Largura do Aquário (cm):</label>
+                    <input type="number" id="width" name="width" required>
+                </div>
+                <div>
+                    <label for="height">Altura do Aquário (cm):</label>
+                    <input type="number" id="height" name="height" required>
+                </div>
+                <button type="button" onclick="calculate()">Calcular</button>
+            </form>
+            <div id="result">
+                <h2>Resultados</h2>
+                <p id="volume"></p>
+                <p id="pump"></p>
+                <p id="heater"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fundo">
+        <img src="../img/peixes-tropicais-dourados-nadando-na-paisagem-do-oceano_124507-18246.avif" alt="">
+    </div> 
+    
+    <script src="../js/scripts.js"></script>
+
+</body>
+</html>
